@@ -647,7 +647,7 @@ function! <SID>DoxygenCommentFunc()
     else
       call s:WarnMsg( l:readError )
     endif
-    exec "normal `d" 
+    exec "normal `d"
     return
   endif
 
@@ -703,7 +703,7 @@ function! <SID>DoxygenCommentFunc()
           call s:ParseThrowParameters( l:lineBuffer, l:doc, l:throwPattern )
         endif
       endif
- 
+
     " This is an attribute for Python
     else
       let l:doc.type = 'attribute'
@@ -728,13 +728,13 @@ function! <SID>DoxygenCommentFunc()
   endif
 
   " Header
-  exec "normal `d" 
+  exec "normal `d"
   if( g:DoxygenToolkit_blockHeader != "" )
     exec "normal O".strpart( s:startCommentBlock, 0, 1 )
     exec "normal A".strpart( s:startCommentBlock, 1 ).g:DoxygenToolkit_blockHeader.s:endCommentBlock
-    exec "normal `d" 
+    exec "normal `d"
   endif
- 
+
   " Brief
   if( g:DoxygenToolkit_compactOneLineDoc =~ "yes" && l:doc.returns != "yes" && len( l:doc.params ) == 0 )
     let s:compactOneLineDoc = "yes"
