@@ -266,17 +266,16 @@
 let loaded_DoxygenToolkit = 1
 "echo 'Loading DoxygenToolkit...'
 let s:licenseTag = "Copyright (C) \<enter>\<enter>"
-let s:licenseTag = s:licenseTag . "This program is free software; you can redistribute it and/or\<enter>"
-let s:licenseTag = s:licenseTag . "modify it under the terms of the GNU General Public License\<enter>"
-let s:licenseTag = s:licenseTag . "as published by the Free Software Foundation; either version 2\<enter>"
-let s:licenseTag = s:licenseTag . "of the License, or (at your option) any later version.\<enter>\<enter>"
+let s:licenseTag = s:licenseTag . "This program is free software: you can redistribute it and/or modify\<enter>"
+let s:licenseTag = s:licenseTag . "it under the terms of the GNU General Public License as published by\<enter>"
+let s:licenseTag = s:licenseTag . "the Free Software Foundation, either version 3 of the License, or\<enter>"
+let s:licenseTag = s:licenseTag . "(at your option) any later version.\<enter>\<enter>"
 let s:licenseTag = s:licenseTag . "This program is distributed in the hope that it will be useful,\<enter>"
 let s:licenseTag = s:licenseTag . "but WITHOUT ANY WARRANTY; without even the implied warranty of\<enter>"
-let s:licenseTag = s:licenseTag . "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\<enter>"
+let s:licenseTag = s:licenseTag . "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the\<enter>"
 let s:licenseTag = s:licenseTag . "GNU General Public License for more details.\<enter>\<enter>"
 let s:licenseTag = s:licenseTag . "You should have received a copy of the GNU General Public License\<enter>"
-let s:licenseTag = s:licenseTag . "along with this program; if not, write to the Free Software\<enter>"
-let s:licenseTag = s:licenseTag . "Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.\<enter>"
+let s:licenseTag = s:licenseTag . "along with this program. If not, see <https://www.gnu.org/licenses/>.\<enter>"
 
 " Common standard constants
 if !exists("g:DoxygenToolkit_briefTag_pre")
