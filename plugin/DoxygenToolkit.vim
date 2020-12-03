@@ -340,8 +340,8 @@ if !exists("g:DoxygenToolkit_cinoptions")
     let g:DoxygenToolkit_cinoptions = "c1C1"
 endif
 if !exists("g:DoxygenToolkit_startCommentTag ")
-  let g:DoxygenToolkit_startCommentTag = "/** "
-  let g:DoxygenToolkit_startCommentBlock = "/* "
+  let g:DoxygenToolkit_startCommentTag = "/**"
+  let g:DoxygenToolkit_startCommentBlock = "/*"
 endif
 if !exists("g:DoxygenToolkit_interCommentTag ")
   let g:DoxygenToolkit_interCommentTag = "* "
